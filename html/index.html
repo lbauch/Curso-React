@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,13 @@
     </head>
 
     <body>
-        <h1>Aprendendo JS</h1>
+        <div id="area">
+            Bem vindo...
+        </div></br>
+
+        <button onclick="document.getElementById('area').innerHTML = 
+        'Bem Vindo ' + prompt('Qual seu nome? ');"> Entrar </button>
+        
+        <button onclick="this.innerHTML = prompt('Alterar nome do botão:')"> Nome do botão</button>
     </body>
 </html>

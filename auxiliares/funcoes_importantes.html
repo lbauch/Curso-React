@@ -1,0 +1,47 @@
+<!-- 
+ Comentários em html - linha ou bloco
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- script importa funções de script -->
+        <script type="text/javascript" src="../scripts/script.js"></script>
+        <title>Introdução</title>
+    </head>
+
+    <body>
+        <h1>Aprendendo JS</h1>
+        <strong> Aprendendo JS </strong></br>
+        
+        <!-- IMAGEM -->
+        <img src='https://google.com/google.jpg'>
+
+        <!-- Criando botões -->
+        <!-- Página web específica -->
+        <button onclick="window.location.href='https://google.com'"> Google </button>
+        <!-- Redirecionar para outra página do projeto -->
+        <button onclick="window.location.href='../html/contato.html'"> Página de contato </button>
+        <!-- Recarregar a página -->
+        <button onclick="window.location.href = window.location.href"> Atualizar Página</button>
+        <!-- Pegar elemento pelo id -->
+        <div id="area">Bem vindo...</div></br>
+        <button onclick="document.getElementById('area')"> Área </button>
+
+        <!-- Sobrescrever algo no html - innerHTML-->
+        <button onclick="document.getElementById('area').innerHTML = 
+        'Bem vindo ' + prompt('Qual seu nome? ');"> Entrar </button>
+
+        <!--
+            Alterar o nome do prórpio elemento, por exemplo, um botão:
+            Inicialmente, mantém o nome dentro da tag, mas, alterar ao apertar no botão
+        -->
+        <!-- O recomendado é utilizar o onclick passando uma função do js -->
+        <button onclick="this.innerHTML = prompt('Alterar nome do botão:')"> Nome do botão</button>
+
+        <!-- Atribuir uma função definida em um arquivo de script: -->
+         <button onclick="entrar()"> Entrar </button>
+    </body>
+</html>

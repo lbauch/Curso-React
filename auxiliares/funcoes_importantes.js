@@ -37,5 +37,10 @@ var idade = prompt('Qual sua idade?')
 
 // document - refere-se a toda a parte da página que pode ser alterada pelo html
 // window - refere-se a toda a janela aberta
+// document.write - entre aspas, deve estar o código HTML
+document.write("<h1>Aprendendo JS</h1>");
+document.write('</br>');
+document.write("<img src='https://google.com/google.jpg'>");
+document.write("<strong> Aprendendo JS </strong>")
 
 

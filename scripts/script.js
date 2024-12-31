@@ -1,3 +1,4 @@
-var nome = 'Lucas';
-
-var idade = prompt('Qual sua idade?')
+// função entrar
+function entrar(){
+    
+}
