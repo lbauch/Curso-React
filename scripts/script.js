@@ -1,4 +1,0 @@
-// função entrar
-function entrar(){
-    
-}

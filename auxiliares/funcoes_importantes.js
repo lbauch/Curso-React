@@ -43,4 +43,100 @@ document.write('</br>');
 document.write("<img src='https://google.com/google.jpg'>");
 document.write("<strong> Aprendendo JS </strong>")
 
+// Criando functions
+function entrar(){
+    var area = document.getElementById('area');
+    var texto = prompt('Digite seu nome:');
+
+    // if - ou, and, true
+    if(texto == '' || (texto == null && true)){
+        alert('Digite seu nome novamente')
+        area.innerHTML = 'Bem vindo...';
+    }
+    else{
+        area.innerHTML = 'Bem vindo' + texto;
+    }
+}
+
+// Function com parâmetro:
+function entrar2(nome){
+    var area = document.getElementById('area');
+    area.innerHTML = 'Bem vindo' + nome;
+}
+
+// ------- ARRAYS
+var lista_nomes = ['nome1', 'nome2', 'nome3', 16];
+
+lista_nomes.length;
+// Pegar o elemento de segunda posição
+lista_nomes.lista_nomes[1];
+// IndexOf retorna o índice do elemento passado como parâmetro
+// Caso não exista no array algum elemento igual ao parâmetro passado, retorna -1. 
+lista_nomes.indexOf('nome2');
+// join - concatena os elementos com um caracter passado como parâmetro
+lista_nomes.join(',');
+// .pop() retira e retorna o último elemento do array
+lista_nomes.pop();
+// .shift() retira e retorna o primeiro elemento do array
+lista_nomes.shift();
+// Alterar algum valor
+lista_nomes = ['nome1', 'nome2', 'nome3', 'nome4'];
+nome = lista_nomes.indexOf('nome3');
+lista_nomes[nome] = 'Algum nome';
+// adicionar elemento passado como parâmetro
+lista_nomes.push('nome10');
+// Verificar elemento da lista:
+if(lista_nomes.indexOf('nome10') > 1){
+    alert('Este elemento está na lista');
+}
+
+// ---- LOOPS
+
+// while
+x = 0
+
+while(x < 10){
+    document.write('<br> O valor de x é ' + x);
+    x++;
+}
+
+document.write('<br><br>');
+
+// for
+for(a = 0; a < x; a++){
+    document.write('<br> O valor de a é ' + a);
+}
+
+// switch
+switch(x){
+    case 0:
+        alert('x vale 0');
+        break;
+    case 1:
+        alert('x vale 1');
+        break;
+    case 2:
+        alert('x vale 2');
+        break;
+    default:
+        alert('x é maior que 2, menor que 0 ou não é número')
+}
+
+// --- intervalos de tempo
+
+// setInterval() - repete a função passada no primeiro parâmetro conforme o tempo do segundo parâmetro
+// recebe 2 parâmetros - o primeiro é a função que será executada. O segundo é o intervalo em ms
+function acao(){
+    document.write('Alô<br>');
+}
+// repete infinitamente a acao de 1 em 1 segundo
+// setInterval(acao, 1000);
+// para pausar a execução do setInterval, é necessário atribuir o comando a uma variável
+var tempo = setInterval(acao, 1000);
+//pausar a execução:
+clearInterval(tempo);
+
+// setTimeout() - executa a ação do 1º param após o tempo definido no 2° param
+setTimeout(acao, 3000);
+
 

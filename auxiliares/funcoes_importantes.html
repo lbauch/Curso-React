@@ -2,6 +2,16 @@
  Comentários em html - linha ou bloco
 -->
 
+<!--
+    -   cookies: valores que são salvos no navegador do usuário, por exemplo: última página acessada.
+        Podem ser usados a fim de serem utilizados na próxima vez que o usuário entrar no site.
+        - Em js, utiliza-se o localStorage para executar uma função similar.
+
+    -   sessions: "cookies temporários" - após o navegador ser fechado, perdem-se as sessions.
+        Podem ser utilizadas para dados que são usados em outras abas
+        - Em js, utiliza-se o sessionStorage para executar uma função similar.
+-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -23,7 +33,7 @@
         <!-- Página web específica -->
         <button onclick="window.location.href='https://google.com'"> Google </button>
         <!-- Redirecionar para outra página do projeto -->
-        <button onclick="window.location.href='../html/contato.html'"> Página de contato </button>
+        <button onclick="window.location.href='../introducao/html/contato.html'"> Página de contato </button>
         <!-- Recarregar a página -->
         <button onclick="window.location.href = window.location.href"> Atualizar Página</button>
         <!-- Pegar elemento pelo id -->
